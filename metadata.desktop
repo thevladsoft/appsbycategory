@@ -1,0 +1,21 @@
+[Desktop Entry]
+Name=Apps by category
+Comment=Shows only one category of applications, with a pannel for pinned apps.
+
+Type=Service
+Icon=start-here-kde
+X-KDE-ServiceTypes=Plasma/Applet
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=ui/Main.qml
+
+X-KDE-PluginInfo-Author=
+X-KDE-PluginInfo-Email=
+X-KDE-PluginInfo-Name=Kicker.section.tiled
+X-KDE-PluginInfo-Version=1
+X-KDE-PluginInfo-Website=
+# X-KDE-PluginInfo-KdeStoreId=1160672
+X-KDE-PluginInfo-Category=Application Launchers
+X-KDE-PluginInfo-Depends=
+
+# X-Plasma-Provides=org.kde.plasma.launchermenu
