@@ -61,5 +61,5 @@ MouseArea {
 // 		}
 // 	}
 
-	onClicked: searchView.searchField.forceActiveFocus()
+// 	onClicked: searchView.searchField.forceActiveFocus()
 }
