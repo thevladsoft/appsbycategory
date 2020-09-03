@@ -160,7 +160,7 @@ AppToolButton {
 
 	}
 
-	acceptedButtons: Qt.LeftButton | Qt.RightButton
+	acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
 	onClicked: {
 		mouse.accepted = true
 		console.log('onClicked', mouse.button, Qt.LeftButton, Qt.RightButton)
@@ -168,6 +168,13 @@ AppToolButton {
 			trigger()
 		} else if (mouse.button == Qt.RightButton) {
 			contextMenu.open(mouse.x, mouse.y)
+		}else if (mouse.button == Qt.MiddleButton) {
+// 					contextMenu.open(mouse.x, mouse.y)
+			if (favouritesView.hasAppTile(launcherUrl)) {
+				favouritesView.removeApp(launcherUrl)
+			}else{
+				favouritesView.addApp(launcherUrl)
+			}
 		}
 	}
 

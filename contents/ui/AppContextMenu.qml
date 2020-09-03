@@ -66,7 +66,7 @@ Item {
             function addPinToMenuAction(favoriteId) {
                 var menuItem = menu.newMenuItem();
                 if (favouritesView.hasAppTile(favoriteId)) {
-                    menuItem.text = i18n("Unpin from Menu")
+                    menuItem.text = i18n("Unpin from Menu (Middle mouse button)")
                     menuItem.icon = "list-remove"
                     menuItem.clicked.connect(function() {
                         if (root.tileIndex >= 0) {
@@ -76,7 +76,7 @@ Item {
                         }
                     })
                 } else {
-                    menuItem.text = i18n("Pin to Menu")
+                    menuItem.text = i18n("Pin to Menu (Middle mouse button)")
                     menuItem.icon = "bookmark-new"
                     menuItem.clicked.connect(function() {
                         favouritesView.addApp(favoriteId)

@@ -64,7 +64,7 @@ Item {
 			anchors.fill: parent
 			hoverEnabled: true
 
-			acceptedButtons: Qt.LeftButton | Qt.RightButton
+			acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
 			cursorShape: editing ? Qt.ClosedHandCursor : Qt.ArrowCursor
 			
 			// This MouseArea will spam "QQuickItem::ungrabMouse(): Item is not the mouse grabber."
@@ -79,6 +79,9 @@ Item {
 					}
 				} else if (mouse.button == Qt.RightButton) {
 					contextMenu.open(mouse.x, mouse.y)
+				}else if (mouse.button == Qt.MiddleButton) {
+// 					contextMenu.open(mouse.x, mouse.y)
+					favouritesView.removeApp(modelData.url)
 				}
 			}PlasmaCore.ToolTipArea {
                 anchors.fill: parent
