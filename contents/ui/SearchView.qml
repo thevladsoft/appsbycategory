@@ -190,7 +190,7 @@ Item {
 				target: search
 				onQueryChanged: {
 					if (search.query.length > 0 && stackView.currentItem != searchResultsView) {
-						stackView.push(searchResultsView, true)
+						//stackView.push(searchResultsView, true)
 					}
 					searchResultsView.filterViewOpen = false
 				}
@@ -204,7 +204,7 @@ Item {
 
 			function showDefaultSearch() {
 				if (stackView.currentItem != searchResultsView) {
-					stackView.push(searchResultsView, true)
+					//stackView.push(searchResultsView, true)
 				}
 				search.applyDefaultFilters()
 			}
