@@ -16,6 +16,8 @@ Item {
 // 			search.applyDefaultFilters()
 // 		}
 	}
+	
+	Plasmoid.backgroundHints: PlasmaCore.Types.DefaultBackground | PlasmaCore.Types.ConfigurableBackground
 
 	property alias rootModel: appsModel.rootModel
 	AppsModel {
